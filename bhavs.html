@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Famous Personalities</title>
+    <style>
+      html,
+      body {
+        scroll-behavior: smooth;
+      }
+      :root {
+        --primary-color: #3498db;
+        --secondary-color: #2c3e50;
+        --accent-color: #e74c3c;
+        --background-color: #ecf0f1;
+        --text-color: #333;
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: var(--background-color);
+        color: var(--text-color);
+        line-height: 1.6;
+      }
+
+      header {
+        background-color: var(--primary-color);
+        color: white;
+        padding: 1em;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 2.5em;
+      }
+
+      nav {
+        background-color: var(--secondary-color);
+        padding: 1em 0;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      nav ul li {
+        margin: 0 15px;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+
+      nav a:hover {
+        color: var(--accent-color);
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .biography-card {
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-bottom: 30px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+      }
+
+      .biography-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .biography-content {
+        display: flex;
+        padding: 20px;
+      }
+
+      .biography-image {
+        flex: 0 0 150px;
+        margin-right: 20px;
+      }
+
+      .biography-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .biography-text {
+        flex: 1;
+      }
+
+      h2 {
+        color: var(--primary-color);
+        margin-top: 0;
+      }
+
+      footer {
+        background-color: var(--secondary-color);
+        color: white;
+        text-align: center;
+        padding: 1em;
+        margin-top: 2em;
+      }
+
+      @media (max-width: 768px) {
+        .biography-content {
+          flex-direction: column;
+        }
+
+        .biography-image {
+          margin-right: 0;
+          margin-bottom: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Famous Personalities</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#narayana-murthy">Narayana Murthy</a></li>
+        <li><a href="#sudha-murthy">Sudha Murthy</a></li>
+        <li><a href="#mukesh-ambani">Mukesh Ambani</a></li>
+        <li><a href="#bill-gates">Bill Gates</a></li>
+        <li><a href="#ratan-tata">Ratan Tata</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div id="narayana-murthy" class="biography-card">
+        <div class="biography-content">
+          <div class="biography-image">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/1/11/Narayana_Murthy_CIF_%28cropped%29.JPG"
+              alt="Narayana Murthy"
+            />
+          </div>
+          <div class="biography-text">
+            <h2>Narayana Murthy</h2>
+            <p>
+              N. R. Narayana Murthy, born in 1948, is a renowned Indian
+              billionaire businessman and the co-founder of Infosys, a
+              multinational corporation specializing in business consulting,
+              technology, engineering, and outsourcing services. He is widely
+              acknowledged as the "Father of the Indian IT Sector" due to his
+              instrumental role in propelling the growth and expansion of
+              India's Information Technology industry.
+            </p>
+            <p>
+              Murthy's entrepreneurial journey began in the early 1980s when he
+              co-founded Infosys with six other individuals. The company's
+              success story is closely intertwined with Murthy's vision and
+              leadership. He played a crucial role in establishing Infosys as a
+              global leader in software services, and his contributions have had
+              a profound impact on the Indian economy.
+            </p>
+            <p>
+              Beyond his business acumen, Murthy is known for his strong ethical
+              principles and commitment to corporate governance. He believes in
+              fostering a culture of transparency, integrity, and accountability
+              within organizations. His contributions to the IT sector have
+              earned him numerous accolades, including the Padma Vibhushan,
+              India's second-highest civilian award.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="sudha-murthy" class="biography-card">
+        <div class="biography-content">
+          <div class="biography-image">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Sudha_Murthy_ji_in_2023.jpg"
+              alt="Sudha Murthy"
+            />
+          </div>
+          <div class="biography-text">
+            <h2>Sudha Murthy</h2>
+            <p>
+              Sudha Murthy, born in 1950, is an Indian author, philanthropist,
+              and the chairperson of the Infosys Foundation. Her multifaceted
+              career has made her a prominent figure in India, known for her
+              social work, literary achievements, and influential role in
+              philanthropic endeavors.
+            </p>
+            <p>
+              Murthy is a prolific writer, having authored numerous books in
+              English and Kannada, primarily focusing on themes of social
+              issues, women's empowerment, and traditional Indian values. Her
+              works have been translated into several languages and have
+              resonated with readers across India and beyond.
+            </p>
+            <p>
+              As the chairperson of the Infosys Foundation, she has played a
+              pivotal role in driving the foundation's initiatives towards
+              improving healthcare, education, and rural development in India.
+              Her contributions have been widely recognized, earning her the
+              Padma Shri, India's fourth-highest civilian award.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="mukesh-ambani" class="biography-card">
+        <div class="biography-content">
+          <div class="biography-image">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/6/69/Mukesh_Ambani.jpg"
+              alt="Mukesh Ambani"
+            />
+          </div>
+          <div class="biography-text">
+            <h2>Mukesh Ambani</h2>
+            <p>
+              Mukesh Ambani, born in 1957, is a prominent Indian billionaire
+              business magnate and the chairman of Reliance Industries, one of
+              India's most valuable companies. He is renowned for his visionary
+              leadership and transformative role in shaping Reliance into a
+              global conglomerate spanning various industries, including
+              petrochemicals, telecommunications, and retail.
+            </p>
+            <p>
+              Ambani's journey began with his involvement in Reliance
+              Industries, founded by his father, Dhirubhai Ambani. He inherited
+              the leadership mantle and spearheaded a series of strategic
+              acquisitions and expansions that propelled Reliance to new
+              heights. His ambitious ventures in the telecom sector,
+              particularly the launch of Jio, revolutionized India's mobile
+              connectivity landscape.
+            </p>
+            <p>
+              Ambani's business acumen has been instrumental in transforming
+              Reliance into a leading player in India's economic growth story.
+              His commitment to innovation and technology has made him a
+              respected figure in the global business community.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="bill-gates" class="biography-card">
+        <div class="biography-content">
+          <div class="biography-image">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Bill_Gates%2C_September_2024.jpg/330px-Bill_Gates%2C_September_2024.jpg"
+              alt="Bill Gates"
+            />
+          </div>
+          <div class="biography-text">
+            <h2>Bill Gates</h2>
+            <p>
+              William Henry Gates III, born in 1955, is an American business
+              magnate, software developer, and philanthropist. He is globally
+              recognized as the co-founder of Microsoft Corporation, the world's
+              largest personal-computer software company. He is also a prominent
+              figure in philanthropy, having dedicated billions of dollars
+              through the Bill and Melinda Gates Foundation to address global
+              health and development challenges.
+            </p>
+            <p>
+              Gates's journey began in his early years, where he developed an
+              early interest in computer programming. This passion led him to
+              co-found Microsoft with Paul Allen in 1975. Microsoft's
+              groundbreaking operating systems, including MS-DOS and Windows,
+              revolutionized the personal computing industry, making Gates one
+              of the most influential figures in the technology sector.
+            </p>
+            <p>
+              Beyond his business successes, Gates is known for his
+              philanthropic efforts. The Bill and Melinda Gates Foundation,
+              established in 2000, has made substantial contributions to global
+              health initiatives, including the fight against malaria and polio,
+              as well as improving education and poverty alleviation. Gates's
+              vision and dedication to philanthropy have earned him widespread
+              recognition and respect.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="ratan-tata" class="biography-card">
+        <div class="biography-content">
+          <div class="biography-image">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/35._ISC-Symposium-Ratan_N._Tata_in_der_Pause-HSGN_028-01812.JPG/330px-35._ISC-Symposium-Ratan_N._Tata_in_der_Pause-HSGN_028-01812.JPG"
+              alt="Ratan Tata"
+            />
+          </div>
+          <div class="biography-text">
+            <h2>Ratan Tata</h2>
+            <p>
+              Ratan Naval Tata, born in 1937, is an Indian industrialist and
+              former chairman of Tata Sons, the holding company of the Tata
+              Group. His leadership played a pivotal role in transforming the
+              Tata Group into one of India's largest and most respected business
+              conglomerates, renowned for its diverse portfolio of companies
+              spanning various sectors, including automobiles, steel,
+              hospitality, and IT.
+            </p>
+            <p>
+              Tata's tenure as chairman was marked by a significant expansion of
+              the Tata Group's operations both domestically and internationally.
+              He spearheaded strategic acquisitions and mergers, introducing new
+              technologies and diversifying the group's portfolio. His
+              commitment to ethical business practices, corporate social
+              responsibility, and employee welfare made him a respected figure
+              in the business world.
+            </p>
+            <p>
+              Beyond his business achievements, Tata is widely known for his
+              philanthropic endeavors and social activism. He has been a strong
+              advocate for education, healthcare, and rural development,
+              contributing significantly to various charitable initiatives.
+              Tata's legacy as a visionary leader and philanthropist continues
+              to inspire generations of business leaders and social activists in
+              India and beyond.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Famous Personalities Biographies</p>
+    </footer>
+  </body>
+</html>
